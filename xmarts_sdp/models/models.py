@@ -16,5 +16,5 @@ class xmarts_sdp(models.Model):
         """
         for order in self:
             order.update({
-                 'amount_total': self.subtotal
+                 'amount_total': order.subtotal
             })
