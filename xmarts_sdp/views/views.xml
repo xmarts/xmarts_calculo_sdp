@@ -1,0 +1,15 @@
+<odoo>
+  <record id="fields_sdp" model="ir.ui.view">
+      <field name="name">Fields.sdp</field>
+      <field name="model">sdp</field>
+      <field name="inherit_id" ref="tvp_sdp.sdp_view_form"/>
+      <field name="arch" type="xml">
+  
+
+        <xpath expr="//field[@name='total']" position="after">
+            <field name="amount_total" invisible="1"/>
+         
+        </xpath>
+      </field>
+    </record>
+</odoo>
